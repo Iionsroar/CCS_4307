@@ -27,16 +27,16 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
 </head>
 <body>
-    <div class="container center mt-5" style="width: 65%; font-family: 'Times New Roman', Times, serif, Geneva, Tahoma, sans-serif">
+    <div class="container center mt-3" style="width: 65%; font-family: 'Times New Roman', Times, serif, Geneva, Tahoma, sans-serif">
         <form class="container center px-5">
             <h3 class="text-center">Student Information Sheet</h3>
             <p>
                 <label class="me-2" for="student-name">Student's Name: </label>
                 <input class="me-3 flex" type="text" id="student-name" name="student-name">
                 <label class="me-2" for="age">Age: </label>
-                <input class="me-3 flex" type="number" id="age" name="age">
+                <input style="width: 50px;" class="me-3" type="number" id="age" name="age">
                 <label class="me-2" for="gender">Male/Female: </label>
-                <input class="me-3 flex" type="text" id="gender" name="gender">
+                <input style="width: 70px;" class="me-3" type="text" id="gender" name="gender">
             </p>
             <p>
                 <label class="me-2" for="birthdate">Birthdate: </label>
@@ -80,8 +80,8 @@
                 <label class="me-2" for="father-workplace">Workplace: </label>
                 <input class="me-3" type="text" id="father-workplace" name="father-workplace">
             </p>
+            <label class="me-2" for="medical">Medical Issues/Allergies/Medication: </label>
             <p>
-                <label class="me-2" for="medical">Medical Issues/Allergies/Medication: </label><br>
                 <input class="me-3 flex" type="text" id="medical" name="medical">
             </p>
             <p>
@@ -100,9 +100,13 @@
                 <label class="me-2" for="internet-issues">Do you have any issues with the internet?</label>
                 <input class="me-3 flex" type="text" id="internet-issues" name="internet-issues">
             </p>
+            <label class="me-2" for="relatives">Names of any relatives attending the school and grade they are in.</label><br>
             <p>
-                <label class="me-2" for="relatives">Names of any relatives attending the school and grade they are in.</label><br>
                 <input class="me-3 flex" type="text" id="relatives" name="relatives">
+            </p><br>
+            <p>
+                <label class="me-2" for="date">Date: </label>
+                <input class="me-3" type="date" id="date" name="date">
             </p>
         </form>
     </div>
