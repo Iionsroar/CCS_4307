@@ -18,16 +18,24 @@
             font-family: 'PT Serif', serif;
         }
         tr:hover td>h3 {
-            color: #03C04A !important;    
+            color: #dc3545 !important;    
+            font-family: 'PT Serif', serif;
+        }
+        tbody>tr:hover {
+            border-right: 4px solid #03C04A;
         }
         tr:not(:first-child):hover img {
             transform: scale(1.2);
+            transition: all .3s;
         }
-        .text-success {
+        .text-success, .link-success {
             color: #03C04A !important;
         }
         nav {
             border-bottom: 2px solid;
+        }
+        .footer {
+            border-top: 2px solid #03C04A;
         }
         /* nav:hover .navbar-brand {
             margin-left: 20px;
@@ -226,7 +234,7 @@
                 </tr>
             </tbody>
         </table>
-        <br><p class="lead text-center"><a href="#index" class="link-danger">Back to Top</a></p>
+        <br><p class="footer lead text-center pt-5"><a href="#index" class="link-success">Back to Top</a></p>
     </div>
 
 </body>
