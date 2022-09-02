@@ -1,6 +1,12 @@
 #title {
     font-family: 'PT Serif', serif;
 }
+.navbar-brand {
+    transform: scale(1.2);
+}
+.navbar-brand:hover {
+    color: #dc3545 !important;    
+}
 tr:hover td>h3 {
     color: #dc3545 !important;    
     font-family: 'PT Serif', serif;
