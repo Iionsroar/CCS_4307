@@ -1,0 +1,26 @@
+#title {
+    font-family: 'PT Serif', serif;
+}
+tr:hover td>h3 {
+    color: #dc3545 !important;    
+    font-family: 'PT Serif', serif;
+}
+tbody>tr:hover {
+    border-right: 4px solid #03C04A;
+}
+tr:not(:first-child):hover img {
+    transform: scale(1.2);
+    transition: all .3s;
+}
+.text-success, .link-success {
+    color: #03C04A !important;
+}
+nav {
+    border-bottom: 2px solid;
+}
+.footer {
+    border-top: 2px solid #03C04A;
+}
+.nav-item>a:not(.disabled):hover {
+    transform: scale(1.1);
+}
