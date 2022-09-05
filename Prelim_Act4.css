@@ -1,32 +1,81 @@
+/* THEME VARIABLES */
+:root {
+    --green: #03C04A;
+    --red: #dc3545;
+    --blue: #6E79C2;
+}
+
+/* PRELIM ACT 4 */
+/* #movie-act {
+    background-color: rgb(203, 224, 214);
+} */
+/* #movie-act table {
+    background-color: rgb(234, 245, 240);
+} */
 #title {
     font-family: 'PT Serif', serif;
 }
-.navbar-brand {
-    transform: scale(1.2);
+#movie-act .navbar-brand {
+    transform: scale(1.5);
+    font-family: 'Shadows Into Light', cursive;
 }
-.navbar-brand:hover {
-    color: #dc3545 !important;    
+#movie-act .navbar-brand:hover {
+    color: var(--red) !important;    
 }
-tr:hover td>h3 {
-    color: #dc3545 !important;    
+#movie-act .navbar-brand {
+    transition: all .3s ease;
+}
+#movie-act .navbar-brand:hover span span {
+    font-weight: bolder;    
+}
+#movie-act tr:hover td>h3 {
+    color: var(--red) !important;    
     font-family: 'PT Serif', serif;
 }
-tbody>tr:hover {
-    border-right: 4px solid #03C04A;
+#movie-act tbody>tr:hover {
+    border-right: 4px solid var(--green);
 }
-tr:not(:first-child):hover img {
+#movie-act tr:not(:first-child):hover img {
     transform: scale(1.2);
+}
+#movie-act tr:not(:first-child) img {
     transition: all .3s;
 }
-.text-success, .link-success {
-    color: #03C04A !important;
+#movie-act .text-success, .link-success {
+    color: var(--green) !important;
 }
-nav {
+#movie-act nav {
     border-bottom: 2px solid;
 }
-.footer {
-    border-top: 2px solid #03C04A;
+#movie-act .footer {
+    border-top: 2px solid var(--green);
 }
 .nav-item>a:not(.disabled):hover {
     transform: scale(1.1);
+}
+
+/* PRELIM ACT 5 */
+body#form-act {
+    background-color: var(--blue);
+}
+#base {
+    width: 65%;
+}
+input.flex {
+    flex:1;
+    display:block;
+    min-width:0;
+}
+#form-act > .card-body {
+    border-top: 4px solid var(--green) !important;
+}
+#form-act .navbar-brand {
+    font-family: 'Lora', serif;
+    transform: scale(1.1);
+}
+#form-act .navbar-brand:hover {
+    color: #000 !important;    
+}
+#form-act .navbar-brand {
+    transition: all .5s ease;
 }
