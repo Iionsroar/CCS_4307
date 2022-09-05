@@ -6,12 +6,6 @@
 }
 
 /* PRELIM ACT 4 */
-/* #movie-act {
-    background-color: rgb(203, 224, 214);
-} */
-/* #movie-act table {
-    background-color: rgb(234, 245, 240);
-} */
 #title {
     font-family: 'PT Serif', serif;
 }
@@ -66,9 +60,6 @@ input.flex {
     display:block;
     min-width:0;
 }
-#form-act > .card-body {
-    border-top: 4px solid var(--green) !important;
-}
 #form-act .navbar-brand {
     font-family: 'Lora', serif;
     transform: scale(1.1);
@@ -79,3 +70,14 @@ input.flex {
 #form-act .navbar-brand {
     transition: all .5s ease;
 }
+/* .border-radius-none {
+    border-radius: 0px;
+}
+.border-bottom-radius-none {
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+.border-top-radius-none {
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+} */

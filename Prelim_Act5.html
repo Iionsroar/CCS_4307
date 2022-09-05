@@ -40,22 +40,22 @@
         </div>
     </nav>
     <div id="base" class="container center my-4">
-        <div class="card">
-            <div class="card-header py-3">
+        <div class="card mb-4 border-bottom-radius-none">
+            <div class="card-header pt-3">
                 <h3 class="text-center">Student Information Sheet</h3>
             </div>
-            <div class="card-body">
+            <div class="card-body py-4">
                 <form class="container center pb-3 px-5 row g-3">
                     <div class="col-md-6">
-                        <label class="form-label" for="student-name">Student's Name: </label>
+                        <label class="form-label" for="student-name">Student's Name: <span class="text-danger">*</span></label>
                         <input class="flex form-control" placeholder="Last Name, First Name M.I." type="text" id="student-name" name="student-name" required>
                     </div>
                     <div class="col-md-2">
-                        <label class="form-label" for="age">Age: </label>
+                        <label class="form-label" for="age">Age: <span class="text-danger">*</span></label>
                         <input class="form-control" type="number" id="age" name="age">
                     </div>
                     <div class="col-md-4">
-                        <label class="form-label" for="sex">Sex: </label>
+                        <label class="form-label" for="sex">Sex: <span class="text-danger">*</span></label>
                         <select id="sex" class="form-select" name="sex">
                             <option selected>Choose...</option>
                             <option value="male">Male</option>
@@ -63,19 +63,29 @@
                             <option value="intersex">Intersex</option>
                         </select>
                     </div>
-                    
                     <div class="col-md-3">
-                        <label class="form-label" for="birthdate">Birthdate: </label>
+                        <label class="form-label" for="birthdate">Birthdate: <span class="text-danger">*</span></label>
                         <input class="form-control" type="date" id="birthdate" name="birthdate">
                     </div>
                     <div class="col-md-9">
-                        <label class="form-label" for="address">Address: </label>
+                        <label class="form-label" for="address">Address: <span class="text-danger">*</span></label>
                         <input class="form-control" placeholder="1234 Main St, City, Province" type="text" id="address" name="address">
                     </div>
-
-                    <!-- TODO ADD DIVIDER/ SECTION -->
+                </form>
+            </div>
+            <div class="card-footer">
+                <p>
+                    All collected information will be used for academic purposes only and will be handled with utmost confidentiality. 
+                </p>
+            </div>
+        </div>
+        
+        <div class="card mb-4 border-radius-none">
+            <div class="card-header">Family Information</div>
+            <div class="card-body py-4">
+                <form class="container center pb-3 px-5 row g-3">
                     <div class="col-md-8">
-                        <label class="form-label" for="guardian-name">Guardian's name(s): </label>
+                        <label class="form-label" for="guardian-name">Guardian's name: <span class="text-danger">*</span></label>
                         <input class="form-control" placeholder="Last Name, First Name M.I." type="text" id="guardian-name" name="guardian-name">
                     </div>
                     <div class="col-md-4">
@@ -83,19 +93,29 @@
                         <input class="form-control" type="text" id="religion" name="religion">
                     </div>
                     <div class="col-md-6">
-                        <label class="form-label" for="relationship">Relationship to student: </label>
-                        <input class="form-control" type="text" id="relationship" name="relationship">
+                        <label class="form-label" for="relationship">Relationship to student: <span class="text-danger">*</span></label>
+                        <select id="relationship" class="form-select" name="relationship">
+                            <option selected>Choose...</option>
+                            <option value="parent">Parent</option>
+                            <option value="email">Godparent</option>
+                            <option value="sms">Grandparent</option>
+                            <option value="sms">Aunt/ Uncle</option>
+                            <option value="sms">Acquaintance</option>
+                            <option value="Messenger">Distant Relative</option>
+                            <option value="Messenger">Other</option>
+                        </select>
                     </div>
                     <div class="col-md-6">
-                        <label class="form-label" for="guardian-telephone">Telephone: </label>
+                        <label class="form-label" for="guardian-telephone">Telephone: <span class="text-danger">*</span></label>
                         <input class="form-control" placeholder="XXXX-YYYY" type="text" id="guardian-telephone" name="guardian-telephone">
                     </div>
+                    
                     <div class="col-md-6">
-                        <label class="form-label" for="fam-email">Family email: </label>
-                        <input class="form-control" type="text" id="fam-email" name="fam-email">
+                        <label class="form-label" for="fam-email">Email: <span class="text-danger">*</span></label>
+                        <input class="form-control" placeholder="abc@example.com" type="text" id="fam-email" name="fam-email">
                     </div>
                     <div class="col-md-6">
-                        <label class="form-label" for="contact-method">Best way to contact you: </label>
+                        <label class="form-label" for="contact-method">Best way to contact you: <span class="text-danger">*</span></label>
                         <select id="contact-method" class="form-select" name="contact-method">
                             <option selected>Choose...</option>
                             <option value="sms">SMS</option>
@@ -105,50 +125,56 @@
                     </div>
                     
                     <div class="col-md-8">
-                        <label class="form-label" for="emergency-contact-name">Emergency Contact Name: </label>
-                        <input class="form-control" type="text" id="emergency-contact-name" name="emergency-contact-name">
+                        <label class="form-label" for="emergency-contact-name">Emergency Contact Name: <span class="text-danger">*</span></label>
+                        <input class="form-control" placeholder="Last Name, First Name M.I."  type="text" id="emergency-contact-name" name="emergency-contact-name">
                     </div>
                     <div class="col-md-4">
-                        <label class="form-label" for="emergency-telephone">Telephone: </label>
+                        <label class="form-label" for="emergency-telephone">Telephone: <span class="text-danger">*</span></label>
                         <input class="form-control" placeholder="XXXX-YYYY" type="text" id="emergency-telephone" name="emergency-telephone">
                     </div>
-
+    
                     <div class="col-md-7">
                         <label class="form-label" for="mother-name">Mother's Name: </label>
                         <input class="form-control" placeholder="Last Name, First Name M.I." type="text" id="mother-name" name="mother-name">
                     </div>
                     <div class="col-md-5">
                         <label class="form-label" for="mother-workplace">Workplace: </label>
-                        <input class="form-control" type="text" id="mother-workplace" name="mother-workplace">
+                        <input class="form-control" type="text" placeholder="Location" id="mother-workplace" name="mother-workplace">
                     </div>
-
+    
                     <div class="col-md-7">
                         <label class="form-label" for="father-name">Father's Name: </label>
                         <input class="form-control" placeholder="Last Name, First Name M.I." type="text" id="father-name" name="father-name">
                     </div>
                     <div class="col-md-5">
                         <label class="form-label" for="father-workplace">Workplace: </label>
-                        <input class="form-control" type="text" id="father-workplace" name="father-workplace">
+                        <input class="form-control" type="text" placeholder="Location" id="father-workplace" name="father-workplace">
                     </div>
-
-                    <label class="col-md-12 form-label" for="medical">Medical Issues/Allergies/Medication: </label>
+                </form>
+            </div>
+        </div>
+        
+        <div class="card mb-4 border-top-radius-none">
+            <div class="card-header">Other details</div>
+            <div class="card-body py-4">
+                <form class="container center pb-3 px-5 row g-3">
+                    <label class="col-md-12 form-label" for="medical">Medical Issues/Allergies/Medication: <span class="text-danger">*</span></label>
                     <div class="col-md-12">
-                        <input class="form-control" type="text" id="medical" name="medical">
+                        <input class="form-control" placeholder="Food allergy, Diabetic, etc. or None" type="text" id="medical" name="medical">
                     </div>
-
                     <div class="col-md-12">
-                        <label class="form-label" for="academic-challenges">Academic Challenges:</label>
-                        <input class="form-control" type="text" id="academic-challenges" name="academic-challenges">
+                        <label class="form-label" for="academic-challenges">Academic Challenges: <span class="text-danger">*</span></label>
+                        <input class="form-control" placeholder="Stress, personal or family problems, or financial issues; or None" type="text" id="academic-challenges" name="academic-challenges">
                     </div>
                     <div class="col-md-12 form-check-inline">
-                        <label class="form-label" for="has-device">Does your child have a device: &emsp;</label>
+                        <label class="form-label" for="has-device">Does your child have a device: <span class="text-danger">*</span>&emsp;</label>
                         <input class="form-check-input" type="radio" name="has-device" id="has-device-yes" value="yes">
                         <label class="form-check-label" for="has-device-yes">&nbsp;Yes &emsp;</label>
                         <input class="form-check-input" type="radio" name="has-device" id="has-device-no" value="no">
                         <label class="form-check-label" for="has-device-no">&nbsp;No</label>
                     </div>
                     <div class="col-md-12">
-                        <label class="form-label" for="device-kind">What kind of device is your child using?</label>
+                        <label class="form-label" for="device-kind">What kind of device is your child using? <span class="text-danger">*</span></label>
                         <select id="device-kind" class="form-select" name="device-kind">
                             <option selected>Choose...</option>
                             <option value="laptop">Laptop</option>
@@ -158,28 +184,26 @@
                         </select>
                     </div>
                     <div class="col-md-12">
-                        <label class="form-label" for="internet-issues">Do you have any issues with the internet? &emsp;</label>
+                        <label class="form-label" for="internet-issues">Do you have any issues with the internet? <span class="text-danger">*</span>&emsp;</label>
                         <input class="form-check-input" type="radio" name="has-internet-issues" id="has-internet-issues-yes" value="yes">
                         <label class="form-check-label" for="has-internet-issues-yes">&nbsp;Yes &emsp;</label>
                         <input class="form-check-input" type="radio" name="has-internet-issues" id="has-internet-issues-no" value="no">
                         <label class="form-check-label" for="has-internet-issues-no">&nbsp;No</label>
                     </div>
-
-                    <label class="col-md-12 form-label" for="relatives">Names of any relatives attending the school and grade they are in.</label><br>
+                    <label class="col-md-12 form-label" for="relatives">Names of any relatives attending the school and grade they are in. <span class="text-danger">*</span></label><br>
                     <div class="col-md-12">
-                        <input class="form-control" placeholder="Jose Rizal - Grade 6, ..." type="text" id="relatives" name="relatives">
+                        <input class="form-control" placeholder="Jose Rizal - Grade 6, ..., or None" type="text" id="relatives" name="relatives">
                     </div>
-
                     <div class="col-md-3">
-                        <label class="form-label" for="date">Date: </label>
+                        <label class="form-label" for="date">Date: <span class="text-danger">*</span></label>
                         <input class="form-control" type="date" id="date" name="date">
                     </div>
-                </form>
-            </div>
-            <div class="card-footer d-grid gap-2 d-md-flex justify-content-md-end">
-                <button class="btn btn-secondary">Cancel</button>
-                <input class="me-5 btn btn-primary" type="submit">
-            </div>
+                </div>
+                <div class="card-footer d-grid gap-2 d-md-flex justify-content-md-end">
+                    <button class="btn btn-secondary">Cancel</button>
+                    <input class="me-5 btn btn-primary" type="submit">
+                </div>
+            </form>
         </div>
     </div>
 </body>
