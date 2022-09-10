@@ -1,26 +1,26 @@
-/* Carousel styling */
-#introCarousel,
+/* Nature Carousel styling */
+#nature #introCarousel,
 .carousel-inner,
 .carousel-item,
 .carousel-item.active {
   height: 100vh;
 }
 
-.carousel-item:nth-child(1) {
+#nature .carousel-item:nth-child(1) {
   background-image: url('https://mdbootstrap.com/img/Photos/Others/images/76.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
 }
 
-.carousel-item:nth-child(2) {
+#nature .carousel-item:nth-child(2) {
   background-image: url('https://mdbootstrap.com/img/Photos/Others/images/77.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
 }
 
-.carousel-item:nth-child(3) {
+#nature .carousel-item:nth-child(3) {
   background-image: url('https://mdbootstrap.com/img/Photos/Others/images/78.jpg');
   background-repeat: no-repeat;
   background-size: cover;
@@ -29,11 +29,24 @@
 
 /* Height for devices larger than 576px */
 @media (min-width: 992px) {
-  #introCarousel {
+  #nature #introCarousel {
     margin-top: -58.59px;
   }
 }
 
-.navbar .nav-link {
+#nature .navbar .nav-link {
   color: #fff !important;
+}
+
+/* Nature Navbar Styling */
+#nature .navbar {
+  z-index: 2000;
+}
+
+/* Nature Custom Styling */
+#nature #navbarExample01 li:hover i {
+  transform:scale(1.2); 
+}
+#nature #navbarExample01 li:hover a {
+  transform:scale(1.1); 
 }
