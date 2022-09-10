@@ -43,10 +43,18 @@
   z-index: 2000;
 }
 
+#nature .navbar-brand, #nature h1 {
+  font-family: 'Lora', serif;
+  transform: scale(1.2);
+  transition: all .2s ease;
+}
+
 /* Nature Custom Styling */
 #nature #navbarExample01 li:hover i {
-  transform:scale(1.2); 
+  transform: scale(1.2); 
+  transition: all .2s ease;
 }
 #nature #navbarExample01 li:hover a {
-  transform:scale(1.1); 
+  transform: scale(1.1); 
+  transition: all .2s ease;
 }
