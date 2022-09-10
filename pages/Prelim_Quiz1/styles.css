@@ -1,3 +1,8 @@
+/* Nature Theme */
+:root {
+  --violet: #413395;
+}
+
 /* Nature Carousel styling */
 #nature #introCarousel,
 .carousel-inner,
@@ -57,4 +62,17 @@
 #nature #navbarExample01 li:hover a {
   transform: scale(1.1); 
   transition: all .2s ease;
+}
+#nature .btn-primary {
+  background-color: var(--violet);
+}
+#nature footer a {
+  color: var(--violet);
+}
+#nature footer a:hover {
+  color: black;
+}
+#nature #copyright {
+  background-color: black;
+  color: white;
 }
