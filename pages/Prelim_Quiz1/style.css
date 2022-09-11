@@ -76,3 +76,66 @@
   background-color: black;
   color: white;
 }
+
+/* Reader Theme */
+#reader .divider-new {
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  margin-top: 2.8rem;
+  margin-bottom: 2.8rem;
+}
+
+#reader .divider-new:before {
+  margin: 0 1.5rem 0 0;
+}
+
+#reader .divider-new:after {
+  margin: 0 0 0 1.5rem;
+}
+
+#reader .divider-new:after,
+.divider-new:before {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background: #000;
+}
+
+body#reader {
+  color: #000;
+}
+
+#reader .link-black {
+  text-decoration: underline;
+  color: #000;
+  text-decoration-color: transparent;
+  transition: 0.3s;
+}
+
+#reader .link-black:hover {
+  text-decoration-color: #000;
+}
+
+#reader .mt-n6 {
+  margin-top: -30px;
+}
+#reader .btn-floating {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+#reader .btn-floating.btn-lg .far {
+  padding-top: 1px;
+  padding-left: 1px;
+  color: #000;
+}
+
+/* Reader Theme */
+#science .item {
+  background-image: url("data:image/svg+xml,");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
