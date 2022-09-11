@@ -132,10 +132,22 @@ body#reader {
   color: #000;
 }
 
-/* Reader Theme */
-#science .item {
-  background-image: url("data:image/svg+xml,");
+/* Science Theme */
+#science {
+  background-image: url('https://images.blush.design/Gu9XoYo048Bx711hEytL?w=920&auto=compress&cs=srgb');
+  background-position: bottom left;
   background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
+  background-size:;
+}
+
+#science .btn {
+  box-shadow:none !important;
+}
+
+#science h1 {
+  font-family: 'Lora', serif;
+}
+
+#science .navbar-dark .nav-link {
+  color: white !important;
 }
