@@ -83,7 +83,6 @@
   background-position: bottom left;
   background-size: cover;
   background-repeat: no-repeat;
-  z-index: -2;
 }
 
 #science .btn {
@@ -102,7 +101,7 @@
 #science img.atom {
   position: absolute;
   bottom: 60%;
-  left: 28%;
+  left: 30%;
   z-index: -1;
   filter: invert(99%) sepia(3%) saturate(428%) hue-rotate(248deg) brightness(116%) contrast(80%);
   -webkit-filter: invert(99%) sepia(3%) saturate(428%) hue-rotate(248deg) brightness(116%) contrast(80%);
@@ -113,6 +112,27 @@
 }
 
 #science .btn-outline-primary {
-  border-color: #63b7b7 !important;
-  color: #63b7b7 !important;
+  border-color: #63b7b7;
+  color: #63b7b7;
+}
+
+#science #section-1 {
+  padding: 100px 0 100px;
+}
+
+#science .navbar-nav a:hover i {
+  transform: scale(1.2);
+  transition: all .2s ease;
+}
+
+#science .btn-outline-danger:hover {
+  background-color: #DC4C64;
+  color: white;
+  transition: all .2s ease;
+}
+
+#science .btn-outline-primary:hover {
+  color: white;
+  background-color: #63b7b7;
+  transition: all .2s ease;
 }
