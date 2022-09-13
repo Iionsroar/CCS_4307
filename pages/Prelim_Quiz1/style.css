@@ -136,3 +136,11 @@
   background-color: #63b7b7;
   transition: all .2s ease;
 }
+
+#science footer a {
+  color: black;
+}
+
+#science footer a:hover {
+  color: #63b7b7;
+}
