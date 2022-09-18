@@ -1,0 +1,385 @@
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One');
+@import url('https://fonts.googleapis.com/css2?family=Russo+One');
+::-webkit-scrollbar {
+    display: none;
+}
+/* GALAXY NAVIGATION BAR ELEMENTS*/
+#galaxy .gnav-bar {
+    background-color: #000D15;
+}
+
+#galaxy .gnav-link {
+    height: 64px;
+}
+#galaxy .gnav-link > .gnav-link-text {
+    font-family: 'Russo One', sans-serif;
+    /* font-size: 1.5rem; */
+    margin: auto;
+    color: #9da9af;
+    text-align: center;
+}
+#galaxy .gnav-link-selected,
+#galaxy .gnav-link:hover {
+    border-bottom: solid #117adb 5px;
+}
+#galaxy .gnav-link-selected > .gnav-link-text,
+#galaxy .gnav-link:hover > .gnav-link-text  {
+    color: #dfe1e2;
+}
+
+#galaxy .gnav-button {
+    background-color: #334753;
+}
+#galaxy .gnav-button > 
+    .gnav-button-text {
+        font-family: 'Russo One', sans-serif;
+        /* font-size: 1.5em; */
+        margin: auto;
+        color: #dfe1e2;
+        text-align: center;
+    }
+#galaxy .gnav-button:hover {
+    background-color: #117adb;
+}
+#galaxy .gnav-button:hover > 
+    .gnav-button-text {
+        color: black;
+    }
+
+#galaxy .container {
+  color: white;
+}
+
+#galaxy .gnav-logo {
+    height: 60px;
+    width: 60px;
+    margin: auto 0px;
+}
+
+/* #galaxy .gnav-logo {
+    width: 100px;
+    height: 100px;
+} */
+
+
+/* GALAXY BANNER */
+#gbanner-main {
+    background-image: url('assets/galaxy-bg.jpg');
+    background-position: bottom center;
+}
+#gbanner-content-1 {
+    background-image: url('assets/galaxy-sun.jpg');
+    background-position: bottom right;
+}
+#gbanner-contact {
+    background-image: url('http://c.files.bbci.co.uk/1570D/production/_123312878_gettyimages-85757595.jpg');
+    background-position: top center;
+}
+#galaxy .gbanner {
+    background-repeat: cover;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 100%;
+}
+#galaxy img#gbanner-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+#galaxy .gbanner-header {
+    font-family: 'Black Ops One', monospace;
+    font-size: 6rem;
+    transform-origin:50% 80%;
+    transform:perspective(400px) rotateX(25deg);
+    color: yellow;
+}
+#galaxy .gbanner-header {
+    padding-top: 5%;
+}
+#galaxy .gbanner-paragraph {
+    margin-top: 15%;
+    padding: 0% 15%;
+    text-shadow: black 0px -2px 3px;
+    font-weight: 400;
+}
+#galaxy .gbanner-button {
+    border: solid yellow 4px;
+    padding: 5px 20px;
+}
+#galaxy .gbanner-button > 
+    .gbanner-button-text {
+        font-family: 'Russo One', sans-serif;
+        font-size: 2.5rem;
+        color: yellow;
+    }
+#galaxy .gbanner-button:hover {
+    background-color: yellow;
+    border: solid yellow 4px;
+    padding: 5px 20px;
+}
+#galaxy .gbanner-button:hover > 
+    .gbanner-button-text {
+        font-family: 'Russo One', sans-serif;
+        font-size: 2.5rem;
+        color: #000D15;
+    }
+
+/* GALAXY CONTENT */
+#galaxy .gcontent {
+    padding-top: 64px;
+}
+#galaxy .gcontent-sidebar {
+    padding-left: 0px;
+    padding-right: 0px;
+    background-color: rgba(0, 0, 0, 0.555);
+}
+#galaxy .gcontent-header {
+    font-family: 'Black Ops One', monospace;
+    font-size: 6rem;
+    transform-origin:50% 80%;
+    transform:perspective(400px) rotateX(25deg);
+    color: yellow;
+}
+#galaxy .gcontent-paragraph {
+    padding-left: 1em;
+    padding-right: 1em;
+    text-align: justify;
+    text-indent: 2em;
+}
+#galaxy .gcontent-list {
+    padding: 0px 12px;
+    text-align: justify;
+    padding-left: 4em;
+}
+#galaxy .gcontent-button-back {
+    border: solid yellow 4px;
+    border-right: solid yellow 2px;
+}
+#galaxy .gcontent-button-next {
+    border: solid yellow 4px;
+    border-left: solid yellow 2px;
+}
+#galaxy .gcontent-button-back, 
+#galaxy .gcontent-button-next >
+    .gcontent-button-text {
+        font-family: 'Russo One', sans-serif;
+        font-size: 2.5rem;
+        color: yellow;
+    }
+#galaxy .gcontent-button-back:hover, 
+#galaxy .gcontent-button-next:hover {
+    background-color: yellow;
+    border: solid yellow 4px;
+}
+#galaxy .gcontent-button-back:hover, 
+#galaxy .gcontent-button-next:hover > 
+    .gcontent-button-text {
+        font-family: 'Russo One', sans-serif;
+        font-size: 2.5rem;
+        color: #000D15;
+    }.
+
+#galaxy .bg-dim {
+  background-color: #000D15;
+}
+
+
+/* NAKAW SA GEEKS 4 GEEKS */
+    #galaxy .main_box {
+        width: 100%;
+        height: 100%;
+        display: flex;
+    }
+     
+    #galaxy .img {
+        flex: 1;
+        height: 100%;
+        cursor: pointer;
+        transition: all .3s;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        position: relative;
+    }
+     
+    #galaxy .img1 {
+        background-image: url(
+            https://wallpaperaccess.com/full/2089984.jpg);
+        }
+     
+    #galaxy .img2 {
+        background-image: url(
+            https://cdn.mos.cms.futurecdn.net/K6b5YCR5MJHxhkiVqGaHp5.jpg);
+    }
+     
+    #galaxy .img3 {
+        background-image: url(
+            https://images.pexels.com/photos/87651/earth-blue-planet-globe-planet-87651.jpeg?cs=srgb&dl=pexels-pixabay-87651.jpg&fm=jpg);
+    }
+     
+    #galaxy .img4 {
+        background-image: url(
+            https://wallpaperaccess.com/full/538127.jpg);
+    }
+     
+    #galaxy .main_box:hover .img {
+        transform: skew(0);
+    }
+     
+    #galaxy .img:hover {
+        flex: 5;
+    }
+     
+    #galaxy .img:hover p {
+        background-color: transparent;
+        border: .125em solid blue;
+        color: rgb(255, 38, 0);
+        transform: rotate(0deg);
+    }
+
+
+/* GALAXY MISC */
+#galaxy a {
+    text-decoration: none;
+    color: inherit;
+}
+/* body#galaxy {
+    overflow: hidden;
+} */
+
+/* HOME PAGE SHENANIGANS*/
+#galaxy .main_box {
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+ 
+#galaxy .img {
+    flex: 1;
+    height: 100%;
+    cursor: pointer;
+    transition: all .3s;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+ 
+#galaxy .home-img1 {
+    background: url('https://mdbootstrap.com/img/Photos/Others/images/78.jpg');
+    background-position: center center;
+}
+#galaxy .home-img2 {
+    background-image: url(
+        https://www.news-medical.net/images/Article_Images/ImageForArticle_22064_16436342404173431.jpg);
+        background-position: center center;
+}
+ 
+#galaxy .home-img3 {
+    background: url('https://www.wallpapertip.com/wmimgs/2-25363_5054063-cyberpunk-neon-wallpaper-and-background-png-retro.png');
+    background-position: center center;
+}
+ 
+#galaxy .home-img4 {
+    background-image: url(
+        assets/galaxy-bg.jpg);
+}
+ 
+#galaxy .main_box:hover .img {
+    transform: skew(0);
+}
+ 
+#galaxy .img:hover {
+    flex: 5;
+}
+ 
+#galaxy .img:hover p {
+    background-color: transparent;
+    border: .125em solid blue;
+    color: rgb(255, 38, 0);
+    transform: rotate(0deg);
+}
+
+#galaxy .ghome-header {
+    margin-top: 10%;
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    font-weight: 700;
+    text-shadow: black 2px 2px 5px;
+}
+
+/* 
+=========================================================================
+PRICING PAGE - START
+=========================================================================
+*/
+.gbanner {
+    background-image: url('https://www.xtrafondos.com/wallpapers/sistema-solar-ilustracion-9454.jpg');
+    background-position: top center;
+}
+
+#galaxy.pricing-page.bg-dark {
+    background-color: #000D15 !important;
+}
+
+#pricing-page .card:hover {
+    border: 2px solid #feee80;
+    box-shadow: 0 0 3px #feee80;
+}
+
+#pricing-page .card-title {
+    transform: scale(1.2);
+    margin-bottom: 15px;
+}
+
+#pricing-page .card-body {
+    padding-bottom: 10px;
+}
+
+#pricing-page #more-info {
+    padding: 100px 0 100px;
+}
+
+#pricing-page .emoji {
+    color: #cb3b24;
+}
+
+#pricing-page .btn-outline-primary {
+    color: #feee80;
+    border-color: #feee80;
+}
+
+#pricing-page .btn-outline-primary:hover {
+    background-color: #feee80;
+    color: black;
+}
+
+#pricing-page #more-info .btn {
+    padding-left: 50px !important;
+    padding-right: 50px !important;
+}
+
+#pricing-page .fancy-border-radius {
+    /* https://mdbootstrap.com/docs/standard/tools/design/fancy-border-radius/ */
+    border-radius: 29% 71% 24% 76% / 70% 70% 30% 30%;
+    background: #feee80;
+    transition: all 0.3s linear;
+}
+
+#pricing-page .fancy-border-radius:hover {
+    transform: scale(1.1);
+}
+
+#pricing-page .btn {
+    box-shadow: none;
+}
+
+#pricing-page .card .filter-black img {
+    filter: brightness(0) saturate(100%);
+    -webkit-filter: brightness(0) saturate(100%);
+}
+/* 
+=========================================================================
+PRICING PAGE - END
+=========================================================================
+*/
