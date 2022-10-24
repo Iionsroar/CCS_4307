@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script type="text/javascript">
+        // =================================================================
+        // LECTURE
+        // =================================================================
+        // document.write("<h1>Hello World</h1>");
+        // window.alert(5+6);
+
+        // document.write("<p>1) How do you end a statement in a JavaScript syntax? <b>;</b></p>");
+        // document.write("<p>2) What are the 2 kinds of JavaScript literals? <b>numbers & strings</b></p>");
+        // document.write("<p>3) How do you present a variable in Javascript? <b>using var, let and const</b></p>");
+        // document.write("<p>4) Create a simple expression in JavaScript: <b>console.log(23);</b></p>");
+
+        // var num1, num2, sum;
+        // num1 = prompt("Enter first number: ");
+        // num2 = prompt("Enter second number: ");
+        // sum = parseInt(num1) + parseInt(num2);
+        // alert("Sum = " + sum);
+
+        // var color = "red";
+        // if (color == "blue") {
+        //     color = "red";
+        // } else {
+        //     color = "blue";
+        // }
+        // document.write(color);
+        
+        // var color = "red";
+        // switch (color) {
+        //     case "yellow":
+        //         document.write("The color is yellow");
+        //         break;
+
+        //     case "red":
+        //         document.write("The color is red");
+        //         break;
+                
+        //     default:
+        //         document.write("The color is not here");
+        //         break;
+        // }
+        
+        // for (let index = 1; index <= 10; index++) {
+        //     document.write(`<p>Iteration number ${index}</p>`)
+        // }
+
+        // =================================================================
+        // ACTIVITY 1
+        // =================================================================
+        // DRILL 1
+        document.write(`<h2>Drill 1</h2>`);
+        var color = prompt("Enter a color name: ");
+        var possibleColors = ["blue", "red", "green", "yellow", "violet"];
+        if (!possibleColors.includes(color)) {
+            document.write(`<p>${color} is not available :(</p>`);
+        } else {
+            document.write(`<p>Color ${color} is available!</p>`);
+        }
+        
+        // DRILL 2
+        document.write(`<h2>Drill 2</h2>`);
+        var number = prompt("Enter a number: ");
+        if (number.length == 1) {
+            document.write("<p>Ones</p>");
+        } else if (number.length == 2) {
+            document.write("<p>Tens</p>");
+        } else if (number.length == 3) {
+            document.write("<p>Hundreds</p>");
+        } else if (number.length == 4) {
+            document.write("<p>Thousands</p>");
+        } else {
+            document.write("<p>That is too much.</p>");
+        }
+        
+        // DRILL 3
+        document.write(`<h2>Drill 3</h2>`);
+        var number = prompt("Enter a number: ");
+        number = number.length;
+        switch (number) {
+            case 1:
+                document.write("<p>Ones</p>");
+                break;
+            case 2:
+                document.write("<p>Tens</p>");
+                break;
+            case 3:
+                document.write("<p>Hundreds</p>");
+                break;
+            case 4:
+                document.write("<p>Thousands</p>");
+                break;
+        
+            default:
+                document.write("<p>That is too much.</p>");
+                break;
+        }
+
+        // DRILL 4
+        document.write(`<h2>Drill 4</h2>`);
+        var start = prompt("Enter start: ");
+        while (start <= 10) {
+            document.write(`<p>Iteration number ${start}</p>`);
+            start++;
+        }
+    </script>
+</body>
+</html>

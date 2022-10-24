@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #main, table {
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+    <div id="main">
+        <button onclick="generateDiamond()">Diamond</button>
+        <button onclick="generateHourglass()">Hourglass</button>
+        <button onclick="generateRibbon()">Ribbon</button>
+        <table id="triangle"></table>
+    </div>
+    <script type="text/javascript">
+        var length = parseInt(prompt("Enter length of equilateral triangle: "));
+        if (length < 5) {
+            alert("Please enter a number greater than or equal to 5");
+            location.reload();
+        }
+        const table = document.querySelector("#triangle");
+        
+        function isOdd(num) {
+            return (num % 2 == 0)? false: true;
+        }
+        
+        function addTriangle(isTrimmed=false) {
+            for (let r = isTrimmed? 1 : 0; r < length; r++) {
+                row = document.createElement("tr");
+                for (let s = r; s < length; s++) {
+                    col = document.createElement("td");
+                    col.setAttribute("style", "color: white;");
+                    col.innerHTML = "*";
+                    row.appendChild(col);
+                }
+                for (let c = 0; c < 2*r+1; c++) {
+                    col = document.createElement("td");
+                    col.innerHTML = "*";
+                    col.setAttribute("style", "color: blue;");
+                    if (isOdd(c)) {
+                        col.setAttribute("style", "color: white;");
+                    }
+                    row.appendChild(col);
+                }
+                table.appendChild(row);
+            }
+        }
+
+        function addInverseTriangle(isTrimmed) {
+            for (let r = isTrimmed? length-1 : length; r > 0; r--) {
+                row = document.createElement("tr");
+                for (let s = r; s < length+1; s++) {
+                    col = document.createElement("td");
+                    col.setAttribute("style", "color: white;");
+                    col.innerHTML = "*";
+                    row.appendChild(col);
+                }
+                for (let c = 0; c < 2*r-1; c++) {
+                    col = document.createElement("td");
+                    col.innerHTML = "*";
+                    col.setAttribute("style", "color: blue;");
+                    if (isOdd(c)) {
+                        col.setAttribute("style", "color: white;");
+                    }
+                    row.appendChild(col);
+                }
+                table.appendChild(row);
+            }
+        }
+        
+        function generateDiamond() {
+            while (table.lastChild) {
+                table.removeChild(table.lastChild);
+            }
+            table.style.transform = 'rotate(0deg)';
+            addTriangle();
+            addInverseTriangle(isTrimmed=true);
+        }
+
+        function generateHourglass() {
+            while (table.lastChild) {
+                table.removeChild(table.lastChild);
+            }
+            table.style.transform = 'rotate(0deg)';
+            addInverseTriangle();
+            addTriangle(isTrimmed=true);
+        }
+
+        function generateRibbon() {
+            while (table.lastChild) {
+                table.removeChild(table.lastChild);
+            }
+            generateHourglass();
+            table.style.transform = 'rotate(90deg)';
+        }
+    </script>
+</body>
+</html>

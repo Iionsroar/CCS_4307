@@ -310,7 +310,7 @@
 
 /* 
 =========================================================================
-PRICING PAGE - START
+ALTO STYLE - START
 =========================================================================
 */
 .gbanner {
@@ -318,68 +318,109 @@ PRICING PAGE - START
     background-position: top center;
 }
 
-#galaxy.pricing-page.bg-dark {
+#galaxy.alto-style.bg-dark {
     background-color: #000D15 !important;
 }
 
-#pricing-page .card:hover {
+.alto-style .card-outline:hover {
     border: 2px solid #feee80;
-    box-shadow: 0 0 3px #feee80;
+    box-shadow: 0 0 5px #feee80;
 }
 
-#pricing-page .card-title {
+.alto-style .card-title {
     transform: scale(1.2);
     margin-bottom: 15px;
 }
 
-#pricing-page .card-body {
+.alto-style .card-body {
     padding-bottom: 10px;
 }
 
-#pricing-page #more-info {
-    padding: 100px 0 100px;
+.alto-style #more-info {
+    padding: 130px 0 130px;
 }
 
-#pricing-page .emoji {
+.alto-style .emoji {
     color: #cb3b24;
 }
 
-#pricing-page .btn-outline-primary {
+.alto-style .btn-outline-primary {
     color: #feee80;
     border-color: #feee80;
 }
 
-#pricing-page .btn-outline-primary:hover {
+.alto-style .btn-outline-primary:hover, .btn-danger {
     background-color: #feee80;
     color: black;
 }
 
-#pricing-page #more-info .btn {
+.alto-style .btn-danger {
+    border-color: #feee80;
+}
+
+.alto-style .btn-danger:hover {
+    border-color: black;
+    background-color: #e8d979;
+    color: black;
+}
+
+.alto-style .btn-primary:hover {
+    border-color: black;
+}
+
+.alto-style .btn-dark:hover {
+    background-color: black;
+}
+
+.alto-style #more-info .btn {
     padding-left: 50px !important;
     padding-right: 50px !important;
 }
 
-#pricing-page .fancy-border-radius {
+.alto-style .fancy-border-radius {
     /* https://mdbootstrap.com/docs/standard/tools/design/fancy-border-radius/ */
     border-radius: 29% 71% 24% 76% / 70% 70% 30% 30%;
     background: #feee80;
     transition: all 0.3s linear;
 }
 
-#pricing-page .fancy-border-radius:hover {
+.alto-style .fancy-border-radius:hover {
     transform: scale(1.1);
 }
 
-#pricing-page .btn {
+.alto-style .btn {
     box-shadow: none;
 }
 
-#pricing-page .card .filter-black img {
+.alto-style .card .filter-black img {
     filter: brightness(0) saturate(100%);
     -webkit-filter: brightness(0) saturate(100%);
 }
+
+.alto-style .bg-warning {
+    background-color: #117adb !important;
+}
+
+.btn-outline-dark:hover {
+    background-color: #feee80;
+    color: black;
+}
+
+.text-yellow {
+    color: #feee80;
+}
+
+.alto-style .outline-black {
+    border-color: black;
+}
+
+.alto-style h1 {
+    font-family: 'Black Ops One', monospace;
+    transform-origin: 50% 80%;
+    transform: perspective(400px) rotateX(25deg);
+}
 /* 
 =========================================================================
-PRICING PAGE - END
+ALTO STYLE - END
 =========================================================================
 */
